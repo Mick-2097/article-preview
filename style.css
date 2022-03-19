@@ -24,6 +24,13 @@ main {
     position: relative;
 
 }
+svg:hover,
+img:hover {
+    cursor: pointer;
+}
+.avatar:hover {
+    cursor: auto;
+}
 main:hover .share {
     opacity: 1;
     transition: opacity 150ms;
@@ -61,10 +68,10 @@ h1 {
     color: var(--Very-Dark-Grayish-Blue);
     font-weight: 700;
     line-height: 1.5;
-    letter-spacing: 0.16575px;
+    letter-spacing: 0.3px;
 }
 .snippet {
-    margin: 12px 0 0 0;
+    margin: 11px 0 0 0;
     font-size: 13px;
     font-weight: 500;
     color: var(--Desaturated-Dark-Blue);
@@ -75,10 +82,10 @@ h1 {
     margin: 32px 0 24px 0;
 }
 .avatar {
-    width: 39px;
-    height: 39px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    margin: 0 16px 0 0;
+    margin: 0 17px 0 0;
 }
 h2 {
     margin: 2px 0 3px 0;
@@ -98,7 +105,7 @@ h2 {
     margin: 0 7px 0 auto;
     transform: translateX(5px);
     padding: 7px;
-    background-color: #ffffff;
+    background-color: var(--Light-Grayish-Blue);
     transition: background-color 100ms;
     border-radius: 50%;
 }
@@ -169,10 +176,10 @@ h2 {
     }
     h1 {
         font-size: 20px;
-        margin: 32px 0 0 0;
+        margin: 33px 0 0 0;
         line-height: 1.4;
         width: 367px;
-        letter-spacing: 0.04px;
+        letter-spacing: 0.125px;
     }
     .snippet {
         width: 367px;
