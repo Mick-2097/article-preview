@@ -40,11 +40,15 @@ main:hover .share::after {
 }
 main:hover .svg-in-row {
     background-color: var(--Very-Dark-Grayish-Blue);
-    transition: background-color 1000ms;
+    transition: background-color 700ms;
 }
 main:hover .svg-in-row-color {
     fill: #ffffff;
-    transition: fill 100ms;
+    transition: fill 1000ms;
+}
+main:hover .svg-in-share {
+    background-color: var(--Desaturated-Dark-Blue);
+    transition: background-color 700ms;
 }
 .picture {
     background-image: url(images/drawers.jpg);
@@ -106,35 +110,36 @@ h2 {
     transform: translateX(5px);
     padding: 7px;
     background-color: var(--Light-Grayish-Blue);
-    transition: background-color 100ms;
+    transition: background-color 700ms;
     border-radius: 50%;
 }
 .svg-in-row-color {
     fill: #6d7f97;
-    transition: fill 500ms;
+    transition: fill 1000ms;
 }
 .svg-in-share {
-    background: #ffffff;
     padding: 7px;
     border-radius: 50%;
-    background: var(--Desaturated-Dark-Blue);
+    background-color: transparent;
     margin: 0 1px 0 auto;
+    transition: background-color 700ms;
 }
 .svg-in-share-color {
     fill: #ffffff;
+    transition: fill 1000ms;
 }
 .share {
     display: flex;
     background: var(--Very-Dark-Grayish-Blue);
     width: 262px;
-    height: 65px;
+    height: 85px;
     align-items: center;
     padding: 0 32px;
-    transform: translateY(-65px) translateX(-32px);
+    transform: translateY(-85px) translateX(-32px);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     opacity: 0;
-    transition: opacity 500ms;
+    transition: opacity 1000ms;
 }
 .share p {
     color: var(--Grayish-Blue);
