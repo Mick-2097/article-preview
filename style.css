@@ -192,7 +192,6 @@ h2 {
         padding: 0 38px;
         height: 55px;
         transform: translateY(130px) translateX(117px);
-        opacity: 1;
     }
     .share::after {
         content: '';
