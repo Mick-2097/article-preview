@@ -1,0 +1,210 @@
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    background: var(--Light-Grayish-Blue);
+}
+main {
+    background: white;
+    width: 326px;
+    height: 515px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px -10px var(--Grayish-Blue);
+}
+main:hover .share {
+    opacity: 1;
+    transition: opacity 150ms;
+}
+main:hover .share::after {
+    opacity: 1;
+    transition: opacity 150ms;
+}
+main:hover .svg-in-row {
+    background-color: var(--Very-Dark-Grayish-Blue);
+    transition: background-color 150ms;
+}
+main:hover .svg-in-row-color {
+    fill: #ffffff;
+    transition: fill 150ms;
+}
+.picture {
+    background-image: url(images/drawers.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position-y: -15.5px;
+    background-size: cover;
+    width: 326px;
+    height: 200px;
+}
+.text {
+    padding: 32px;
+}
+h1 {
+    margin: 4px 0 0 0;
+    font-size: 16px;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.16575px;
+}
+.snippet {
+    margin: 12px 0 0 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--Desaturated-Dark-Blue);
+    line-height: 1.55;
+}
+.row {
+    display: flex;
+    margin: 32px 0 24px 0;
+}
+.avatar {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    margin: 0 16px 0 0;
+}
+h2 {
+    margin: 2px 0 3px 0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+}
+.date {
+    margin: 0;
+    color: var(--Grayish-Blue);
+    font-size: 13px;
+    font-weight: 500;
+}
+.svg-in-row {
+    height: 14px;
+    align-self: center;
+    margin: 0 7px 0 auto;
+    transform: translateX(5px);
+    padding: 7px;
+    background-color: #ffffff;
+    transition: background-color 500ms;
+    border-radius: 50%;
+}
+.svg-in-row-color {
+    fill: #6d7f97;
+    transition: fill 500ms;
+}
+.svg-in-share {
+    background: #ffffff;
+    padding: 7px;
+    border-radius: 50%;
+    background: var(--Desaturated-Dark-Blue);
+    margin: 0 1px 0 auto;
+}
+.svg-in-share-color {
+    fill: #ffffff;
+}
+.share {
+    display: flex;
+    background: var(--Very-Dark-Grayish-Blue);
+    height: 65px;
+    align-items: center;
+    padding: 0 32px;
+    transform: translateY(-99px);
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.share p {
+    color: var(--Grayish-Blue);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 16px 0 0;
+    letter-spacing: 4px;
+}
+.facebook {
+    margin: 0 16px 0 0;
+}
+.twitter {
+    margin: 0 16px 0 0;
+}
+
+@media (min-width: 800px) {
+    main {
+        width: 730px;
+        height: 280px;
+        display: flex;
+    }
+    .picture {
+        width: 285px;
+        height: 280px;
+        background-position-y: 0;
+        background-position: left;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        width: 445px;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+    h1 {
+        font-size: 20px;
+        margin: 32px 0 0 0;
+        line-height: 1.4;
+        width: 367px;
+        letter-spacing: 0.04px;
+    }
+    .snippet {
+        width: 367px;
+    }
+    .row {
+        width: 367px;
+        margin: 20px 0 24px 0;
+    }
+    .svg-in-share {
+        display: none;
+    }
+    .share {
+        position: absolute;
+        right: calc(20vw + 1px);
+        top: 61vh;
+        border-radius: 10px;
+        padding: 0 38px;
+        height: 55px;
+    }
+    .share::after {
+        content: '';
+        position: absolute;
+        border: 12px solid transparent;
+        border-top-color: var(--Very-Dark-Grayish-Blue);
+        top: 100%;
+        left: 45%;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+}
+
+
+.attribution {
+    position: absolute;
+    font-size: 11px; 
+    text-align: center; 
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
