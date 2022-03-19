@@ -24,7 +24,6 @@ main {
     position: relative;
 
 }
-svg:hover,
 img:hover {
     cursor: pointer;
 }
@@ -33,19 +32,19 @@ img:hover {
 }
 main:hover .share {
     opacity: 1;
-    transition: opacity 150ms;
+    transition: opacity 1000ms;
 }
 main:hover .share::after {
     opacity: 1;
-    transition: opacity 150ms;
+    transition: opacity 1000ms;
 }
 main:hover .svg-in-row {
     background-color: var(--Very-Dark-Grayish-Blue);
-    transition: background-color 250ms;
+    transition: background-color 1000ms;
 }
 main:hover .svg-in-row-color {
     fill: #ffffff;
-    transition: fill 150ms;
+    transition: fill 100ms;
 }
 .picture {
     background-image: url(images/drawers.jpg);
@@ -197,11 +196,12 @@ h2 {
         right: 0;
         top: 0;
         border-radius: 10px;
-        padding: 0 38px;
+        padding: 0;
         height: 55px;
-        transform: translateY(130px) translateX(117px);
+        transform: translateY(130px) translateX(75px);
         opacity: 0;
         transition: opacity 150ms;
+        justify-content: center;
     }
     .share::after {
         content: '';
